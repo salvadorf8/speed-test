@@ -1,0 +1,72 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto 150px;
+    min-height: 100vh;
+    background-color: #222222;
+}
+
+.header-area {
+    grid-area: header;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid blue; */
+}
+
+.header-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #c3a767;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+}
+.body-text {
+    max-width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    /* border: 1px solid blue; */
+}
+
+.main-area {
+    grid-area: main;
+    display: grid;
+    background-image: url(../../assets/tech-rings.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* place-self: center; */
+    /* place-content: center; */
+    place-items: center;
+    /* justify-self: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
+
+    /* border: 1px solid red; */
+}
+
+.footer-area {
+    grid-area: footer;
+    display: grid;
+    place-items: center;
+    color: white;
+    /* border: 1px solid yellow; */
+}
+
+.start-button {
+    background: linear-gradient(180deg, #e6ce98 0%, #c3a767 100%);
+    border-radius: 8px;
+    /* border: 1px solid red; */
+}
