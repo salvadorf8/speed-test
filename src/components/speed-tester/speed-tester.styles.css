@@ -1,11 +1,12 @@
 .container {
     display: grid;
+    /* height: 100%; */
     grid-template-areas:
         'header'
         'main'
         'footer';
     grid-template-columns: 100%;
-    grid-template-rows: 150px 1fr 150px;
+    grid-template-rows: 1fr 2fr 1fr;
     min-height: 100vh;
     background-color: #222222;
 }
