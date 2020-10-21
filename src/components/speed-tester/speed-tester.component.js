@@ -42,19 +42,17 @@ class SpeedTester extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className='container'>
-                    <div className='header-area'>
-                        <div className='header-text'>SPEED TEST</div>
-                        <div className='body-text'>Tap this button 30 times as quickly as you can</div>
-                    </div>
-                    <div className='main-area ' onClick={this.handleCounterClick}>
-                        {this.state.startGame ? <OnButton /> : <OffButton />}
-                    </div>
-                    <div className='footer-area' onClick={this.handleStartButtonClick}>
-                        {this.state.startGame ? <Timer seconds={this.state.seconds} /> : <StartButton className='start-button' />}
-                        {this.state.counter}
-                    </div>
+            <div className='container'>
+                <div className='header-area'>
+                    <div className='header-text'>SPEED TEST</div>
+                    <div className='body-text'>Tap this button 30 times as quickly as you can</div>
+                </div>
+                <div className='main-area ' onClick={this.handleCounterClick}>
+                    {this.state.startGame ? <OnButton /> : <OffButton />}
+                </div>
+                <div className='footer-area' onClick={this.handleStartButtonClick}>
+                    {this.state.startGame ? <Timer seconds={this.state.seconds} /> : <StartButton className='start-button' />}
+                    {this.state.counter}
                 </div>
             </div>
         );
