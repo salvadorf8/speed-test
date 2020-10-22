@@ -11,9 +11,7 @@ class SpeedTester extends React.Component {
     state = { startGame: false, counter: 0, seconds: 0 };
 
     handleStartButtonClick = () => {
-        this.setState({ counter: 0 });
-        this.setState({ seconds: 0 });
-        this.setState({ startGame: true });
+        this.setState({ counter: 0, seconds: 0, startGame: true });
 
         this.interval = setInterval(() => {
             this.setState((prevState) => ({
